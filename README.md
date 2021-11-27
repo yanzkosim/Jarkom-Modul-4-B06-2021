@@ -53,7 +53,7 @@ Selanjutnya, diatur IP untuk masing-masing interface yang ada di setiap device s
 
 Setelah IP diatur, dilakukan routing.
 
-# FOOSHA
+### FOOSHA
 
 ![routingFOOSHA1](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingFOOSHA(1).png)
 
@@ -61,29 +61,29 @@ Setelah IP diatur, dilakukan routing.
 
 ![routingFOOSHA3](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingFOOSHA(3).png)
 
-# WATER7
+### WATER7
 
 ![routingWATER7](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingWATER7.png)
 
-# PUCCI
+### PUCCI
 
 ![routingPUCCI](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingPUCCI.png)
 
-# GUANHAO
+### GUANHAO
 
 ![routingGUANHAO1](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingGUANHAO(1).png)
 
 ![routingGUANHAO2](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingGUANHAO(2).png)
 
-# ALABASTA
+### ALABASTA
 
 ![routingALABAStA](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingALABASTA.png)
 
-# OIMO
+### OIMO
 
 ![routingOIMO](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingOIMO.png)
 
-# SEASTONE
+### SEASTONE
 
 ![routingSEASTONE](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/routingVLSM/routingSEASTONE.png)
 
