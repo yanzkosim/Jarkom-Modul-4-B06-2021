@@ -157,7 +157,7 @@ Dari tree yang dibuat, maka dapat dituliskan tabel pembagian IP dari subnet A se
 
 ![Tabel Pembagian IP](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Pembagian%20IP%20A.jpeg)
 
-Untuk subnet B keatas, dapat langsung dilihat dari pembagian di Tree karena yang dibutuhkan adalah NID dan subnetmask saja.
+Untuk subnet B keatas, dapat langsung dilihat dari pembagian di Tree karena yang dibutuhkan adalah NID dan netmask saja.
 
 ### Topologi
 
