@@ -49,6 +49,8 @@ Dari tree tersebut, diperoleh pembagian IP seperti berikut.
 
 ![tabelVLSM](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/tabelVLSM.png)
 
+Broadcast Address diperoleh dari NID subnet + wildcard pada tabel subnetting yang ada di modul
+
 Selanjutnya, diatur IP untuk masing-masing interface yang ada di setiap device sesuai dengan pembagian subnet pada pohon VLSM.
 
 Setelah IP diatur, dilakukan routing.
@@ -97,43 +99,43 @@ Pada CIDR, dilakukan penggabungan subnet terluar dari topologi sebagai berikut:
 
 #### Langkah 1
 
-![CIDR 1]()
+![CIDR 1](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Phase%201.jpg)
 
-![CIDR 1 - tabel]()
+![CIDR 1 - tabel](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Subnet%20A.jpeg)
 
 #### Langkah 2
 
-![CIDR 2]()
+![CIDR 2](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Phase%202.jpg)
 
-![CIDR 2 - tabel]()
+![CIDR 2 - tabel](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Tabel%202.jpeg)
 
 #### Langkah 3
 
-![CIDR 3]()
+![CIDR 3](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Phase%203.jpg)
 
-![CIDR 3 - tabel]()
+![CIDR 3 - tabel](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Tabel%203.jpeg)
 
 #### Langkah 4
 
-![CIDR 4]()
+![CIDR 4](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Phase%204.jpg)
 
-![CIDR 4 - tabel]()
+![CIDR 4 - tabel](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Tabel%204.jpeg)
 
 #### Langkah 5
 
-![CIDR 5]()
+![CIDR 5](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Phase%205.jpg)
 
-![CIDR 5 - tabel]()
+![CIDR 5 - tabel](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Tabel%205.jpeg)
 
 #### Langkah 6
 
-![CIDR 6]()
+![CIDR 6](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Phase%206.jpg)
 
-![CIDR 6 - tabel]()
+![CIDR 6 - tabel](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Tabel%206.jpeg)
 
 #### Langkah 7
 
-![CIDR 7]()
+![CIDR 7](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Phase%207.jpg)
 
 Pada setiap penggabungan subnet, subnet barunya akan selalu memiliki netmask yang lebih kecil dari subnet yang digabung, dimana netmask tersebut dapat dilihat di tabel tabel yang ada dibawah tiap penggabungan di topologi.
 
@@ -141,23 +143,19 @@ Pada setiap penggabungan subnet, subnet barunya akan selalu memiliki netmask yan
 
 Setelah penggabungan subnet selesai dilakukan, selanjutnya ialah mengatur pembagian IP. Pembagian IP dilakukan dengan menggunakan tree sebagai berikut
 
-![Tree CIDR]()
+![Tree CIDR](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/Tree%20-%CIDR.jpg)
 
 Pembagian menggunakan tree ini dilakukan dengan melihat wildcard dari tabel subnet yang ada di modul. Misalnya NID kiri adalah 10.10.0.0 /18, maka NID kanan adalah NID kiri + wildcard netmask 18 yaitu 0.0.63.255, lalu angka bukan 0 paling kiri ditambah 1 sehingga NID kanan adalah 10.10.64.255 /X. X adalah subnet dari pembagian di topologi
 
 Dari tree yang dibuat, maka dapat dituliskan tabel pembagian IP dari subnet A sebagai berikut 
 
-![Tabel Pembagian IP]()
+![Tabel Pembagian IP](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/CIDR%20-%20Pembagian%20IP%20A.jpeg)
 
 Untuk subnet B keatas, dapat langsung dilihat dari pembagian di Tree karena yang dibutuhkan adalah NID dan subnetmask saja.
 
 ### Topologi
 
-Selanjutnya adalah membuat topologi di GNS3
-
-![Topologi]()
-
-Lalu isi static address setiap node pada GNS3 berdasarkan pembagian IP yang telah dibuat. Untuk pembagian ip di subnet, router paling atas diisi IP berupa NID + 1, selanjutnya diikuti dengan pola +1, dengan router sebagai fokus utama. eth0 pada Foosha diisi dengan dhcp karena terhubung dengan NAT. 
+Selanjutnya adalah membuat topologi di GNS3, lalu isi static address setiap node pada GNS3 berdasarkan pembagian IP yang telah dibuat. Untuk pembagian ip di subnet, router paling atas diisi IP berupa NID + 1, selanjutnya diikuti dengan pola +1, dengan router sebagai fokus utama. eth0 pada Foosha diisi dengan dhcp karena terhubung dengan NAT. 
 
 ```
 # Foosha
@@ -342,16 +340,16 @@ Testing yang dilakukan adalah melakukan ping dari server Fukurou ke `Router Pucc
 
 1. Pucci
 
-![Testing Pucci]()
+![Testing Pucci](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/Testing%20-%20Pucci.png)
 
 2. Courtyard
 
-![Testing Courtyard]()
+![Testing Courtyard](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/Testing%20-%20Courtyard.png)
 
 3. Doriki
 
-![Testing Doriki]()
+![Testing Doriki](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/Testing%20-%20Doriki.png)
 
 4. my.its.ac.id
 
-![Testing my.its.ac.id]()
+![Testing my.its.ac.id](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/Testing%20-%20Internet.png)
