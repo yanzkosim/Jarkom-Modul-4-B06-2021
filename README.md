@@ -19,7 +19,7 @@ Dari topology, ditentukan subnet-subnet yang terdapat pada topology. Sehingga di
 Kemudian dientukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan dilakukan labelling netmask berdasarkan jumlah IP yang dibutuhkan.
 
 | Subnet | Jumlah IP | Netmask |
-| ------ | --------- | ------- |
+| :----: | :-------: | :-----: |
 | A1 | 101 | /25 |
 | A2 | 2021 | /21 |
 | A3 | 2 | /30 |
@@ -35,8 +35,7 @@ Kemudian dientukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan dilakuk
 | A13 |	252 | /24 |
 | A14 | 721 | /22 |
 | A15 |2 | /30 |
-| --- | --- | ---|
-| Total | 5845 | /19 |
+| **Total** | **5845** | **/19** |
 
 #
 
