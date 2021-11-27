@@ -33,6 +33,10 @@ Kemudian dientukan jumlah alamat IP yang dibutuhkan oleh tiap subnet dan dilakuk
 | A11 | 13 | /28 |
 | A12 | 2 | /30 |
 | A13 |	252 | /24 |
+| A14 | 721 | /22 |
+| A15 |2 | /30 |
+| --- | --- | ---|
+| Total | 5845 | /19 |
 
 #
 
