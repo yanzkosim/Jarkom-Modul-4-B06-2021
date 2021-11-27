@@ -149,7 +149,7 @@ Pada setiap penggabungan subnet, subnet barunya akan selalu memiliki netmask yan
 
 Setelah penggabungan subnet selesai dilakukan, selanjutnya ialah mengatur pembagian IP. Pembagian IP dilakukan dengan menggunakan tree sebagai berikut
 
-![Tree CIDR](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/Tree%20-%20CIDR.jpg)
+![Tree CIDR](https://github.com/yanzkosim/Jarkom-Modul-4-B06-2021/blob/main/screenshot/CIDR/Tree.jpg)
 
 Pembagian menggunakan tree ini dilakukan dengan melihat wildcard dari tabel subnet yang ada di modul. Misalnya NID kiri adalah 10.10.0.0 /18, maka NID kanan adalah NID kiri + wildcard netmask 18 yaitu 0.0.63.255, lalu angka bukan 0 paling kiri ditambah 1 sehingga NID kanan adalah 10.10.64.255 /X. X adalah subnet dari pembagian di topologi
 
